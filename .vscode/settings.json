@@ -33,7 +33,9 @@
 	},
 	"[markdown]": {
 		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "denoland.vscode-deno"
+		"editor.defaultFormatter": "denoland.vscode-deno",
+		"editor.insertSpaces": true,
+		"editor.detectIndentation": false
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"files.exclude": {
