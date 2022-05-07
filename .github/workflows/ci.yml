@@ -43,6 +43,7 @@ jobs:
           git push -u origin ${{ steps.getInc.outputs.newVersion }}
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: "Publish to NPM"
+        if: "steps.getInc.outputs.newVersion"
         run: "npm publish"
       - name: "Create release draft"
         uses: "softprops/action-gh-release@v1"
