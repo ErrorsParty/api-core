@@ -28,8 +28,11 @@ jobs:
           EOF
       - name: "Update package.json and changelog & create and push tag"
         if: "steps.getInc.outputs.newVersion"
+        run: ".github/scripts/updateVersions ${{ steps.getInc.outputs.newVersion }}"
+      - name: "Build project"
+        run: "npm run build"
+      - name: "Create git tag"
         run: |
-          .github/scripts/updateVersions ${{ steps.getInc.outputs.newVersion }}
           git add .
           git config --global user.name "x-access-token"
           git config --global user.email "x-access-token@users.noreply.github.com"
