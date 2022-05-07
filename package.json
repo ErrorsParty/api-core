@@ -1,6 +1,6 @@
 {
   "name": "errorsparty-api-core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The API core that plugins can use to interact with the Errors Party CMS.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
