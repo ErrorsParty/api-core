@@ -32,6 +32,10 @@ jobs:
         run: "npm run build"
       - name: "Create git tag"
         if: "steps.getInc.outputs.newVersion"
+        run: ".github/scripts/updateVersions ${{ steps.getInc.outputs.newVersion }}"
+      - name: "Build project"
+        run: "npm run build"
+      - name: "Create git tag"
         run: |
           git add .
           git config --global user.name "x-access-token"
