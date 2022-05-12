@@ -5,6 +5,7 @@
 !/.github/
 !/.github/workflows/
 !/.github/workflows/ci.yml
+!/.github/workflows/pull.yml
 !/.github/scripts/
 !/.github/scripts/**/
 !/.github/scripts/**/*
@@ -33,6 +34,7 @@
 !/tsconfig.json
 !/rollup.config.js
 !/package.json
+!/package-lock.json
 !/.eslintrc.json
 !/.prettierrc.json
 
