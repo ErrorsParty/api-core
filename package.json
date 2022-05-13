@@ -35,5 +35,8 @@
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4",
     "zx": "^6.1.0"
+  },
+  "dependencies": {
+    "errorsparty-resources": "^0.1.1"
   }
 }
