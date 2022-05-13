@@ -37,6 +37,6 @@
     "zx": "^6.1.0"
   },
   "dependencies": {
-    "errorsparty-resources": "^0.1.1"
+    "errorsparty-resources": "^0.1.2"
   }
 }
